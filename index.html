@@ -1,0 +1,81 @@
+ <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>
+
+
+
+           $(function() {
+         
+
+                $(".toggle" ).on("click", function(){
+
+    
+    
+    
+    $(".item").addClass("active"); 
+     
+     $(".toggle").addClass("off");
+     $(".x").addClass("on");
+
+    })
+
+   
+   
+    });
+
+    $(function() {
+         
+
+         $(".x,.item" ).on("click", function(){
+
+
+
+$(".item").removeClass("active");
+    $(".toggle").removeClass("off"); 
+    $("x").removeClass("on")
+
+
+
+
+})
+
+
+
+});
+
+
+
+        </script>
+        </head>
+        <body>
+            <nav>
+                <ul class="menu">
+                <li class="logo"><a href="#">logo</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Products</a></li>
+                <li class="item"><a href="#">Services</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="toggle"><span class="bar"></span></li>
+               
+            </ul>
+            </nav>
+
+            <section id="home">
+                
+        <div class="frontimage">
+            <img src="front car.png">
+        </div>
+        <div class="geonet">
+          <h1>
+            GeoNet
+          </h1>
+          <h2>
+            System Integrated Fleet Management
+          </h2>
+        </div>
+            </section>
+        </body>
+ </html>
